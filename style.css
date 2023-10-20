@@ -26,17 +26,16 @@ body {
 #grid {
     position: absolute;
     display: grid;
-    grid-template-rows: repeat(3, 5fr);
     grid-gap: 25px;
-    left: 26%;
-    top: 20%;
+    left: 33%;
+    top: 17%;
     
 }
 
 .item {
     background-color: rgb(52, 48, 48);
-    padding: 15px;
-    width: 700px;
+    padding: 1px;
+    width: 500px;
     height: 70px;
     border: whitesmoke 4px solid;
     border-radius: 20px;
@@ -46,14 +45,19 @@ body {
 .itemTitle {
     color: white;
     font-family: sans-serif;
+    font-size: 20px;
     position: relative;
-    top: -17px;
+    top: -13px;
+    left: 10px;
 }
 
 .itemDesc {
     color: white;
     font-family: sans-serif;
+    font-size: 15px;
     position: relative;
-    top: -10px;
+    top: -19px;
+    left: 10px;
+
 
 }
