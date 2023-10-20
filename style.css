@@ -29,14 +29,31 @@ body {
     grid-template-rows: repeat(3, 5fr);
     grid-gap: 25px;
     left: 26%;
-    top: 25%;
+    top: 20%;
     
 }
 
 .item {
-    background-color: gray;
-    padding: 10px;
+    background-color: rgb(52, 48, 48);
+    padding: 15px;
     width: 700px;
-    height: 65px;
+    height: 70px;
+    border: whitesmoke 4px solid;
+    border-radius: 20px;
     
+}
+
+.itemTitle {
+    color: white;
+    font-family: sans-serif;
+    position: relative;
+    top: -17px;
+}
+
+.itemDesc {
+    color: white;
+    font-family: sans-serif;
+    position: relative;
+    top: -10px;
+
 }
