@@ -18,7 +18,11 @@ function addTask() {
         titleInput.classList.add("alert")
         descInput.classList.add("alert")
 
-        
+        setTimeout(function() {
+            titleInput.classList.remove("alert");
+            descInput.classList.remove("alert");
+          }, 2500);
+
         
     } else {
         const newTask = document.createElement("div");
