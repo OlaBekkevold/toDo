@@ -60,6 +60,14 @@ body {
     left: 10px;
 }
 
+.deleteButton {
+    position: relative;
+    left: 463px;
+    top: -77px;
+    font-size: 23px;
+   
+}
+
 #inputMenu {
     position: absolute;
     left: 1%;
@@ -104,10 +112,3 @@ form {
     top: 10%;
 }
 
-.deleteButton {
-    position: relative;
-    left: 463px;
-    top: -77px;
-    font-size: 23px;
-   
-}
