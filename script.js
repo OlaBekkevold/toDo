@@ -15,7 +15,10 @@ function addTask() {
 
     
     if  (titleValue == "" || descValue == "") {
-        alert("Please enter a title and description");
+        titleInput.classList.add("alert")
+        descInput.classList.add("alert")
+
+        
         
     } else {
         const newTask = document.createElement("div");
