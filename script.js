@@ -35,7 +35,7 @@ function addTask() {
     newTask.appendChild(deleteButton);
 
 
-    grid.appendChild(newTask);
+    grid.insertBefore(newTask, grid.firstChild);
 
     titleInput.value = "";
     descInput.value = "";
