@@ -1,10 +1,3 @@
-const grid = document.getElementById("grid");
-
-const titleInput = document.getElementById("titleInput");
-titleValue = titleInput.value;
-
-const descInput = document.getElementById("descInput");
-descValue = descInput.value;
 
 
 
@@ -12,6 +5,16 @@ descValue = descInput.value;
 
 function addTask() {
 
+    const grid = document.getElementById("grid");
+
+    const titleInput = document.getElementById("titleInput");
+    titleValue = titleInput.value;
+
+    const descInput = document.getElementById("descInput");
+    descValue = descInput.value;
+
+    
+    
     const newTask = document.createElement("div");
     newTask.classList.add("item");
     
