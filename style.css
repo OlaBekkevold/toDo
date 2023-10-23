@@ -103,3 +103,11 @@ form {
     left: 3%;
     top: 10%;
 }
+
+.deleteButton {
+    position: relative;
+    left: 463px;
+    top: -77px;
+    font-size: 23px;
+   
+}
