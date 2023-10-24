@@ -57,6 +57,9 @@ function addTask() {
         const deleteButton = document.createElement("p");
         deleteButton.innerHTML = "🗑️";
         deleteButton.classList.add("deleteButton");
+        deleteButton.addEventListener("click", function() {
+            newTask.remove();
+        });
         newTask.appendChild(deleteButton);
 
 
