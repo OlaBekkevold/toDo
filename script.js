@@ -1,20 +1,17 @@
-
-
-
+const grid = document.getElementById("grid");
 
 
 function addTask() {
-
-    const grid = document.getElementById("grid");
 
     const titleInput = document.getElementById("titleInput");
     titleValue = titleInput.value;
 
     const descInput = document.getElementById("descInput");
     descValue = descInput.value;
-
     
-    if  (titleValue == "" || descValue == "") {
+    const whitespace = /^\s*$/;
+    
+    if  (whitespace.test(titleValue) && whitespace.test(descValue)) {
         titleInput.classList.add("alert")
         descInput.classList.add("alert")
 
@@ -25,7 +22,7 @@ function addTask() {
 
 
         
-    } else if (titleValue == "") {
+    } else if (whitespace.test(titleValue)) {
         titleInput.classList.add("alert")
 
         setTimeout(function() {
@@ -33,7 +30,7 @@ function addTask() {
           }, 2500);
 
 
-    } else if (descValue == "") {
+    } else if (whitespace.test(titleValue)) {
         descInput.classList.add("alert")
 
         setTimeout(function() {
