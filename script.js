@@ -23,8 +23,26 @@ function addTask() {
             descInput.classList.remove("alert");
           }, 2500);
 
+
         
-    } else {
+    } else if (titleValue == "") {
+        titleInput.classList.add("alert")
+
+        setTimeout(function() {
+            titleInput.classList.remove("alert");
+          }, 2500);
+
+
+    } else if (descValue == "") {
+        descInput.classList.add("alert")
+
+        setTimeout(function() {
+            descInput.classList.remove("alert");
+          }, 2500);
+    }
+    
+    
+    else {
         const newTask = document.createElement("div");
         newTask.classList.add("item");
     
@@ -45,7 +63,7 @@ function addTask() {
         newTask.appendChild(deleteButton);
 
 
-        grid.insertBefore(newTask, grid.firstChild);
+        grid.appendChild(newTask);
 
         titleInput.value = "";
         descInput.value = "";
