@@ -70,7 +70,9 @@ function addTask() {
 
         const checkbox = document.createElement("div");
         checkbox.classList.add("checkbox");
-        checkbox.addEventListener("click", complete());
+        checkbox.addEventListener("click", function(event) {
+            complete(event)
+        });
         newTask.appendChild(checkbox);
 
 
@@ -84,9 +86,8 @@ function addTask() {
 }
 
 // This function gets called when the user clicks the checkbox
-function complete() {
+function complete(event) {
     const checkbox = event.target;
-    console.log(checkbox);
     checkbox.classList.toggle("checked");
 }
 
