@@ -70,6 +70,7 @@ function addTask() {
 
         const checkbox = document.createElement("div");
         checkbox.classList.add("checkbox");
+        // This function gets called when the user clicks the checkbox and uses the event object to get the checkbox that was clicked.
         checkbox.addEventListener("click", function(event) {
             complete(event)
         });
@@ -85,13 +86,15 @@ function addTask() {
     
 }
 
-// This function gets called when the user clicks the checkbox
+// This functions marks the task as complete
 function complete(event) {
+    // Gets the checkbox that was clicked and it's siblings
     const checkbox = event.target;
     const parentDiv = checkbox.parentNode;
     const title = parentDiv.querySelector(".itemTitle");
     const desc = parentDiv.querySelector(".itemDesc");
 
+    // Toggles a new class on the checkbox and the title and description
     checkbox.classList.toggle("checked");
     title.classList.toggle("itemTitleChecked");
     desc.classList.toggle("itemDescChecked");
