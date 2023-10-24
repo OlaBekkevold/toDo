@@ -88,7 +88,13 @@ function addTask() {
 // This function gets called when the user clicks the checkbox
 function complete(event) {
     const checkbox = event.target;
+    const parentDiv = checkbox.parentNode;
+    const title = parentDiv.querySelector(".itemTitle");
+    const desc = parentDiv.querySelector(".itemDesc");
+
     checkbox.classList.toggle("checked");
+    title.classList.toggle("itemTitleChecked");
+    desc.classList.toggle("itemDescChecked");
 }
 
 

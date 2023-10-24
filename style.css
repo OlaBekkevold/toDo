@@ -49,6 +49,21 @@ body {
     position: relative;
     top: -13px;
     left: 10px;
+   
+
+}
+
+.itemTitleChecked {
+    color: white;
+    font-family: sans-serif;
+    font-size: 20px;
+    position: relative;
+    top: -13px;
+    left: 10px;
+    text-decoration: line-through;
+    text-decoration-color: black;
+    text-decoration-thickness: 3px;
+
 }
 
 .itemDesc {
@@ -58,6 +73,19 @@ body {
     position: relative;
     top: -19px;
     left: 10px;
+}
+
+.itemDescChecked {
+    color: white;
+    font-family: sans-serif;
+    font-size: 15px;
+    position: relative;
+    top: -19px;
+    left: 10px;
+    text-decoration: line-through;
+    text-decoration-color: black;
+    text-decoration-thickness: 3px;
+
 }
 
 .deleteButton {
