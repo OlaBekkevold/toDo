@@ -13,7 +13,7 @@ function addTask() {
     // Represents a string of only whitespace
     const whitespace = /^\s*$/;
 
-    // Checks if the input have no content
+    // Checks if the input has no content
     if  (whitespace.test(titleValue) && whitespace.test(descValue)) {
         // Add the alert class to the input fields, which causes them to blink red
         titleInput.classList.add("alert")
@@ -34,7 +34,7 @@ function addTask() {
           }, 2500);
 
 
-    } else if (whitespace.test(titleValue)) {
+    } else if (whitespace.test(descValue)) {
         descInput.classList.add("alert")
 
         setTimeout(function() {
@@ -70,6 +70,7 @@ function addTask() {
 
         const checkbox = document.createElement("div");
         checkbox.classList.add("checkbox");
+        checkbox.addEventListener("click", complete());
         newTask.appendChild(checkbox);
 
 
@@ -81,3 +82,5 @@ function addTask() {
     }
     
 }
+
+
