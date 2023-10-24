@@ -83,4 +83,11 @@ function addTask() {
     
 }
 
+// This function gets called when the user clicks the checkbox
+function complete() {
+    const checkbox = document.getElementsByClassName("checkbox");
+    console.log(checkbox);
+    checkbox.classList.toggle("checked");
+}
+
 
