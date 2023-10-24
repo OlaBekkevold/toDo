@@ -68,6 +68,10 @@ function addTask() {
         });
         newTask.appendChild(deleteButton);
 
+        const checkbox = document.createElement("div");
+        checkbox.classList.add("checkbox");
+        newTask.appendChild(checkbox);
+
 
         grid.appendChild(newTask);
 
