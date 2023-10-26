@@ -65,6 +65,7 @@ function addTask() {
         // This function gets called when the user clicks the delete button
         deleteButton.addEventListener("click", function() {
             newTask.remove();
+            updateStatus();
         });
         newTask.appendChild(deleteButton);
 
@@ -82,9 +83,11 @@ function addTask() {
         // Resets the input fields
         titleInput.value = "";
         descInput.value = "";
+        updateStatus();
     }
     
 }
+
 
 // This functions marks the task as complete
 function complete(event) {
@@ -97,13 +100,21 @@ function complete(event) {
     // Toggles a new class on the checkbox and the title and description
     checkbox.classList.toggle("checked");
     title.classList.toggle("itemTitleChecked");
-    desc.classList.toggle("itemDescChecked");
+    desc.classList.toggle("itemDescChecked")
 
-    
+    updateStatus();
 
-    
+}
 
-
+// This function updates the information about the tasks. It will get called whenever a change is made to the tasks.
+function updateStatus() {
+    // Get the output element
+    const output = document.getElementById("infoOutput");
+    // Uses length to get the number of elements with the class "checked" and "item"
+    const completedTasks = document.getElementsByClassName("checked").length;
+    const totalTasks = document.getElementsByClassName("item").length;
+    // Updates the output element
+    output.innerHTML = completedTasks + "/" + totalTasks + " completed";
 }
 
 
