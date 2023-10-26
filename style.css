@@ -213,3 +213,20 @@ form {
     left: 5px;
 }
 
+#delAll {
+    position: absolute;
+    left: 20px;
+    top: 7px;
+    font-family: sans-serif;
+    color: white;
+}
+
+#delAll:hover {
+    cursor: pointer;
+    text-decoration-line: underline;
+}
+
+#delAll:active {
+    transform: translateY(2px);
+}
+
