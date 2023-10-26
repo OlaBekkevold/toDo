@@ -117,4 +117,16 @@ function updateStatus() {
     output.innerHTML = completedTasks + "/" + totalTasks + " completed";
 }
 
+// Function to delete all tasks
+function delAll() {
+    // Get a list of all task elements
+    const tasks = document.querySelectorAll(".item");
+    // Loop through the list and delete each task
+    for (const task of tasks) {
+        task.remove();
+    }
+    
+    updateStatus();
+}
+
 
