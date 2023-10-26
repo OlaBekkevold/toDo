@@ -1,9 +1,9 @@
-// Global variables
-const grid = document.getElementById("grid");
 
 // This function gets called when the user clicks the "Add Task" button
 function addTask() {
-    // Get the values from the input fields
+    // Get all the values needed
+    const grid = document.getElementById("grid");
+
     const titleInput = document.getElementById("titleInput");
     titleValue = titleInput.value;
 
