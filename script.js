@@ -98,6 +98,12 @@ function complete(event) {
     checkbox.classList.toggle("checked");
     title.classList.toggle("itemTitleChecked");
     desc.classList.toggle("itemDescChecked");
+
+    
+
+    
+
+
 }
 
 

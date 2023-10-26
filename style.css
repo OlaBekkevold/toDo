@@ -3,14 +3,13 @@ body {
     background-color: #0d1117;
 }
 
-.txt {
-    color: white;
-    font-family: sans-serif;
-}
+
 
 #header {
     position: absolute;
     left: 43%;
+    color: white;
+    font-family: sans-serif;
 }
 
 #nav {
@@ -195,5 +194,21 @@ form {
     height: 200px;
     background-color: white;
     border-radius: 10px;
+}
+
+#infoTitle {
+    font-family: sans-serif;
+    position: absolute;
+    top: -15px;
+    left: 6px;
+}
+
+
+
+#infoOutput {
+    font-family: sans-serif;
+    color: black;
+    position: absolute;
+    left: 5px;
 }
 
