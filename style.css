@@ -8,8 +8,6 @@ body {
 #header {
     position: absolute;
     left: 43%;
-    color: white;
-    font-family: sans-serif;
 }
 
 #nav {
@@ -146,7 +144,7 @@ button:hover {
     transform: translateY(2px);
   }
 
-form {
+#inputs {
     position: absolute;
     left: 3%;
     top: 10%;
@@ -202,7 +200,6 @@ form {
 }
 
 #infoTitle {
-    font-family: sans-serif;
     position: absolute;
     top: -15px;
     left: 6px;
@@ -211,18 +208,19 @@ form {
 
 
 #infoOutput {
-    font-family: sans-serif;
-    color: black;
     position: absolute;
     left: 5px;
+}
+
+.infoTxt {
+    font-family: sans-serif;
 }
 
 #delAll {
     position: absolute;
     left: 20px;
     top: 7px;
-    font-family: sans-serif;
-    color: white;
+    
 }
 
 #delAll:hover {
@@ -232,5 +230,10 @@ form {
 
 #delAll:active {
     transform: translateY(2px);
+}
+
+.navTxt {
+    font-family: sans-serif;
+    color: white;
 }
 

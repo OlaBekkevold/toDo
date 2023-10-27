@@ -8,8 +8,8 @@
 </head>
 <body>
     <div id="nav">
-        <h1  id="header">Todo List</h1>
-        <h4 id="delAll" onclick="delAll()">Delete all tasks</h4> 
+        <h1  id="header" class="navTxt" >Todo List</h1>
+        <h4 id="delAll" class="navTxt" onclick="delAll()">Delete all tasks</h4> 
     </div>
 
     <div id="grid">
@@ -17,7 +17,7 @@
     </div>
 
     <div id="inputMenu">
-        <form>
+        <div id="inputs">
             <input type="text" id="titleInput" placeholder="Write a title for the task" maxlength="64">
             <br>
             <br>
@@ -27,14 +27,14 @@
             <button id="addButton" type="button" onclick="addTask()">Add task</button>
 
 
-        </form>
+        </div>
     </div>
 
     <div id="infoMenu">
-        <h2 id="infoTitle">Status:</h2>
+        <h2 id="infoTitle" class="infoTxt">Status:</h2>
         <br>
         <br>
-        <output id="infoOutput">0/0 completed</output>
+        <output id="infoOutput" class="infoTxt">0/0 completed</output>
     </div>
 
     
